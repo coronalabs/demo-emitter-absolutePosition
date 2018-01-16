@@ -100,6 +100,24 @@
         outline: none;
       }
     </style>
+    <style type="text/css">
+	    #controls {
+	      	visibility: hidden;
+	    }
+
+	    #output {
+	      	visibility: hidden;
+		}
+
+		.titleBar {
+	        display: inline-block;
+	        vertical-align: top;
+	        margin-top: 30px;
+	        margin-left: 20px;
+	        font-weight: bold;
+	        color: rgb(120, 120, 120);
+		}
+    </style>
   </head>
   <body>
     <a href="http://coronalabs.com" style="padding:5px"><svg width="91" height="91" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -114,6 +132,7 @@
 
     <div class="spinner" id='spinner'></div>
     <div class="corona" id="status">Downloading...</div>
+    <div class="titleBar" ><span style="font-family: monospace">emitter.absolutePosition</span> demo</div>
 
 <span id='controls'>
   <span><input type="checkbox" id="resize">Resize canvas</span>
